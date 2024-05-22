@@ -1,8 +1,11 @@
 name: Deploy static content to Pages
 
 on:
-  push:
+  workflow_run:
+    workflows: [ "lint" ]
     branches: [ "ci" ]
+    types:
+      - completed
   workflow_dispatch:
 
 permissions:
