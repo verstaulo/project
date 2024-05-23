@@ -6,9 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "lint": "eslint --fix . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "prettier": "npx prettier 'src/**/*.{jsx,ts,mjs,cjs,json}'"
+    "prettier": "npx prettier --write 'src/**/*.{jsx,ts,mjs,cjs,json}'"
   },
   "dependencies": {
     "react": "^18.2.0",

@@ -8,7 +8,7 @@ export default defineConfig({
   base: '/project/', // при деплое на кастомный домен установить путь base:'./'
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src'),
-    },
-  },
+      '@': path.resolve(__dirname, './src')
+    }
+  }
 })
