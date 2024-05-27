@@ -4,23 +4,83 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    @font-face {
+        font-family: "Raleway";
+        src: url(./assets/fonts/Raleway-Regular.ttf) format("ttf");
+        font-weight: 400;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: "Merriweather";
+        src: url(./assets/fonts/Merriweather-Regular.ttf) format("ttf");
+        font-weight: 400;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: "Merriweather";
+        src: url(./assets/fonts/Merriweather-Bold.ttf) format("ttf");
+        font-weight: 700;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: "Montserrat";
+        src: url(./assets/fonts/Montserrat-Regular.ttf) format("ttf");
+        font-weight: 400;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: "Montserrat";
+        src: url(./assets/fonts/Montserrat-Bold.ttf) format("ttf");
+        font-weight: 700;
+        font-style: normal;
+    }
+}
+
 :root {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: 'Raleway', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  min-width: 320px;
-  min-height: 100vh;
+    min-width: 320px;
+    min-height: 100vh;
+    @apply bg-primary;
+}
+
+section {
+    @apply py-[7rem]
+}
+
+@layer components {
+    .sectionHeader {
+        @apply pb-[6.25rem]
+    }
+
+    .sectionTitle {
+        @apply font-montserrat font-bold text-center text-[2.3rem] uppercase tracking-wider;
+    }
+
+    .sectionSubTitle {
+        @apply font-merriweather text-center uppercase font-normal text-neutral-600 text-2xl
+    }
+
+    .advantagesCard {
+        @apply flex flex-col justify-center items-center gap-4 p-[10px] basis-[270px]
+    }
+
+    .advantagesImg {
+        @apply size-[120px]
+    }
 }
