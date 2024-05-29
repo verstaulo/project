@@ -29,6 +29,7 @@ module.exports = {
     semi: ['error', 'never'],
     'comma-dangle': ['error', 'never'],
     'react/prop-types': 'off',
-    'readable-tailwind/multiline': ['warn', { printWidth: 100 }]
+    'readable-tailwind/multiline': ['warn', { group: 'never', printWidth: 100 }],
+    'readable-tailwind/no-unnecessary-whitespace': ["off"]
   }
 }

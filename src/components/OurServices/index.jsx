@@ -34,17 +34,15 @@ function ServiceCard({ size }) {
     <div
       className={`
         min-w-[21.875rem] basis-[450px] bg-[url(@/assets/350x350.png)] bg-cover bg-center
-        bg-no-repeat font-merriweather
-
-        max-[969px]:flex-grow
+        bg-no-repeat font-merriweather max-[969px]:flex-grow${size === 'big' ? ' flex-grow' : `
+          flex-shrink
+        `}
       `}
     >
       <div
         className={`
           relative flex h-full flex-col justify-end overflow-hidden bg-neutral-800/50 px-[70px]
           py-[55px] text-white
-
-          ${size === 'big' ? 'min-[969px]:flex-grow' : 'min-[969px]:flex-shrink'}
         `}
       >
         <h3 className='pb-5 font-bold uppercase'>Lorem ipsum dolor sit amet</h3>

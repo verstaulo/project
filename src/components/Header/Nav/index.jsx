@@ -5,7 +5,7 @@ function Nav() {
   const handleClick = () => {
     setOpen(!open)
   }
-  const cn = 'h-1 w-[30px] origin-center bg-slate-700 transition'
+  const cn = 'h-1 w-[30px] origin-center bg-slate-700 transition '
   return (
     <div
       className='relative flex size-[1.875rem] cursor-pointer flex-col justify-center gap-1'
