@@ -25,7 +25,7 @@ const advantages = [
 function Advantages() {
   return (
     <section className='bg-secondary'>
-      <div className='container min-h-[20rem] text-center '>
+      <div className='container min-h-[20rem] text-center'>
         <header className='sectionHeader'>
           <h2 className='sectionTitle mb-8'>Наши преимущества</h2>
         </header>

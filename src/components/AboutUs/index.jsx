@@ -2,7 +2,7 @@ function AboutUs() {
   return (
     <section>
       <div className='container'>
-        <header className="sectionHeader">
+        <header className='sectionHeader'>
           <h2 className='sectionTitle'>О нас</h2>
           <p className='sectionSubTitle'>Lorem ipsum dolor sit amet event landing template</p>
         </header>

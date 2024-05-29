@@ -4,9 +4,9 @@ import Nav from '@/components/Header/Nav/index.jsx'
 function Header() {
   return (
     <header className='py-14'>
-      <div className='container flex justify-between items-center'>
+      <div className='container flex items-center justify-between'>
         <Logo />
-        <Nav/>
+        <Nav />
       </div>
     </header>
   )

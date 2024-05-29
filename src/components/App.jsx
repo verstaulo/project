@@ -6,14 +6,16 @@ import FeaturedWorks from '@/components/FeaturedWorks/index.jsx'
 import OurServices from '@/components/OurServices/index.jsx'
 
 function App() {
-  return <>
-    <Header />
-    <Hero/>
-    <Advantages/>
-    <AboutUs/>
-    <FeaturedWorks/>
-    <OurServices/>
-  </>
+  return (
+    <>
+      <Header />
+      <Hero />
+      <Advantages />
+      <AboutUs />
+      <FeaturedWorks />
+      <OurServices />
+    </>
+  )
 }
 
 export default App

@@ -12,7 +12,13 @@ function FeaturedWorks() {
             vel velit voluptas voluptates voluptatum.
           </p>
         </header>
-        <ul className='grid [grid-template-columns:_repeat(auto-fit,_minmax(350px,_1fr))] gap-4'>
+        <ul
+          className={`
+          grid gap-4
+
+          [grid-template-columns:_repeat(auto-fit,_minmax(350px,_1fr))]
+        `}
+        >
           {Array.from({ length: 6 }).map((_, i) => (
             <li key={i}>
               <img src={defaultImg} alt='ourwork' className='w-full object-cover' />

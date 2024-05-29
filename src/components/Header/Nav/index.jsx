@@ -11,9 +11,9 @@ function Nav() {
       className='relative flex size-[1.875rem] cursor-pointer flex-col justify-center gap-1'
       onClick={handleClick}
     >
-      <div className={cn + (open ? ' absolute top-1/2 rotate-45' : '')}></div>
-      <div className={cn + (open ? ' opacity-0' : '')}></div>
-      <div className={cn + (open ? ' absolute top-1/2 -rotate-45' : '')}></div>
+      <div className={cn + (open ? 'absolute top-1/2 rotate-45' : '')}></div>
+      <div className={cn + (open ? 'opacity-0' : '')}></div>
+      <div className={cn + (open ? 'absolute top-1/2 -rotate-45' : '')}></div>
     </div>
   )
 }
